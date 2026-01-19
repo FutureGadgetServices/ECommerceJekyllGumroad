@@ -48,7 +48,7 @@ Note that you can add class to style your html and image.
 
 It now looks much better:
 
-<a href="https://gum.co/soon-jekyll" class="no-underline pv2 grow db"><img class="w-100" src="/images/templates/jekyll/Soon_Jekyll-template-sample.png"></a>
+<a href="https://gum.co/soon-jekyll" class="no-underline pv2 grow db"><img class="w-100" src="{{ '/images/templates/jekyll/Soon_Jekyll-template-sample.png' | relative_url }}"></a>
 
 {% include gumroad-overlay.html id="soon-jekyll" %}
 

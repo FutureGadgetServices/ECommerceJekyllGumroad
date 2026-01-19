@@ -44,7 +44,7 @@ Add images to your post using markdown.
 {% endhighlight %}
 
 
-![Mountain](/images/image-1200.jpg)
+<img src="{{ '/images/image-1200.jpg' | relative_url }}" alt="Mountain">
 
 
 ### Image with caption
@@ -53,21 +53,17 @@ Add images to your post using markdown.
 
 {% include figure.html image_path="/images/image-1200.jpg" alt="image" caption="Mountain" %}{: .full .tc}
 
-![Mountain](/images/image-1200.jpg)
-{: .tc}
-<figcaption>Mountain</figcaption>
-{: .tc}
+<img src="{{ '/images/image-1200.jpg' | relative_url }}" alt="Mountain" class="tc">
+<figcaption class="tc">Mountain</figcaption>
 
 ### Image aligned left
 
-![Mountain](/images/image-600.jpg)
-{: .tl}
+<img src="{{ '/images/image-600.jpg' | relative_url }}" alt="Mountain" class="tl">
 
 
 ### Image aligned right
 
-![Mountain](/images/image-600.jpg)
-{: .tr}
+<img src="{{ '/images/image-600.jpg' | relative_url }}" alt="Mountain" class="tr">
 
 
 ### Post width image
@@ -87,8 +83,7 @@ Input:
 
 Result:
 
-![Mountain](/images/image-1200.jpg)
-{: .full .tc}
+<img src="{{ '/images/image-1200.jpg' | relative_url }}" alt="Mountain" class="full tc">
 
 Make sure your [block inline attribute lists](https://kramdown.gettalong.org/syntax.html#inline-attribute-lists){: .blue .hover-blue} like `{: .full .tc}` is not on the same line as your image markup to render styling properly
 {: .notice }

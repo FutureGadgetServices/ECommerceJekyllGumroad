@@ -16,7 +16,7 @@ If you are a Gumroad creator, you can use Supply with Jekyll to display products
 [Templates Supply](https://templates.supply){: .btn .btn-outline--success }
 
 
-<a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="/images/templates/jekyll/Supply-temp.png"></a>
+<a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="{{ '/images/templates/jekyll/Supply-temp.png' | relative_url }}"></a>
 
 {% include gumroad-overlay.html id="supply" %}
 
@@ -155,7 +155,7 @@ Write something like:
 
 to get a product display like this:
 
-<a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="/images/screenshot.png"></a>
+<a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="{{ '/images/screenshot.png' | relative_url }}"></a>
 
 {% include gumroad-overlay.html id="supply" %}
 

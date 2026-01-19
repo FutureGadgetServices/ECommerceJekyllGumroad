@@ -13,13 +13,13 @@ subtitle: An open source e-commerce template for Jekyll + Gumroad.
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/Product" class="product-list w-100 w-50-m ph2-m w-third-l ph3">
 
 						<div itemprop="image" class="style aspect-ratio aspect-ratio--1x1" >
-							<a href="{{ product.url }}" style="background-image:url({{ product.image }});"
+							<a href="{{ product.url | relative_url }}" style="background-image:url({{ product.image | relative_url }});"
 						class="db bg-center cover aspect-ratio--object" /><h4 class="f4 helvetica bg-light-green no-underline white shadow-2 grow pa2 pv3 dib mr3">$ {{ product.price }}</h4>
 							</a>
 						</div>
 
 						<article itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer" class="product-details dib v-mid lh-copy avenir">
-							<h3><a  itemprop="url" class="f5 f4-ns mb0 link black-90 link dim avenir" href="{{ product.url }}"><span itemprop="name">{{ product.title }}</span></a></h3>
+							<h3><a  itemprop="url" class="f5 f4-ns mb0 link black-90 link dim avenir" href="{{ product.url | relative_url }}"><span itemprop="name">{{ product.title }}</span></a></h3>
 							<h4 itemprop="itemOffered">Category: {{ product.cat }}</h4>
 
 							<div itemprop="description" class="product-description f6 f5 fw4 mt1 black-60 pb4">

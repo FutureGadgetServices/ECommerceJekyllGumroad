@@ -29,7 +29,7 @@ Since Jekyll 4.0, the `link` tag now comes with the `relative_url` filter incorp
 
 to get a product display like this:
 
-<a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="/images/screenshot.png"></a>
+<a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="{{ '/images/screenshot.png' | relative_url }}"></a>
 
 {% include gumroad-overlay.html id="supply" %}
 
