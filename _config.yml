@@ -22,7 +22,7 @@ social:
 
 # Build settings
 markdown: kramdown
-timezone: FR
+timezone: America/New_York
 
 collections:
   products:
